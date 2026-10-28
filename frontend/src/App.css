@@ -1,0 +1,88 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #111827;
+  color: #f9fafb;
+}
+
+.status-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 40px 28px;
+  text-align: center;
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgb(0 0 0 / 25%);
+}
+
+.status-card h1 {
+  margin: 0 0 12px;
+  font-size: clamp(28px, 5vw, 42px);
+}
+
+.subtitle {
+  color: #9ca3af;
+  margin-bottom: 30px;
+}
+
+.connection-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: #111827;
+  overflow-wrap: anywhere;
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.connected {
+  background: #22c55e;
+}
+
+.disconnected {
+  background: #ef4444;
+}
+
+.api-info {
+  margin: 22px 0;
+  color: #9ca3af;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.retry-button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.retry-button:hover {
+  background: #1d4ed8;
+}
